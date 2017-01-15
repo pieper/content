@@ -1,0 +1,100 @@
+<html> <head>
+<link rel="stylesheet" href="reveal.css">
+<link rel="stylesheet" href="white.css">
+</head> <body>
+<div class="reveal"> <div class="slides">
+
+<!--
+
+gif movies made on mac by installing homebrew
+and ffmpeg and gifsicle.
+
+Screen captures using QuickTime player.
+
+Each animation converted with a command like this:
+
+ffmpeg -i /Users/pieper/Movies/SlicerInformatics-2017/MRHead.mov -f gif - | gifsicle --optimize=3 --delay=3 > /tmp/MRHead.gif
+
+-->
+
+<section>
+
+  <h1>Slicer for Informatics Research:</h1>
+  <h2>Hands on examples</h2>
+
+  <h3><em>Steve Pieper, PhD</em></h3>
+  <a href='http://isomics.com'>Isomics, Inc.</a>
+
+</section>
+
+
+<section>
+
+  <h1>Prerequisites</h1>
+    <ul>
+      <li>Get the software from
+        <a href='http://download.slicer.org'>http://download.slicer.org</a>
+      </li>
+      <li>The examples are made with 3D Slicer version 4.6.2 released in November of 2016</li>
+      <li> These examples should work on most Windows, MacOS, and Linux machines.</li>
+      <li> <em>Note that only 64 bit operating systems are supported</em></li>
+  </ul>
+  <p/>
+  <p/>
+  <h3> Slicer is free and open source under a <a href='https://github.com/Slicer/Slicer/blob/master/License.txt'>BSD-style license</a>
+  <h3> <em>Slicer is not an FDA-approved medical devices and is intended for research only.</em></h3>
+</em></h3>
+
+</section>
+
+
+<section>
+
+  <section>
+    Rendering Sample Data
+    <img data-src="../gifs/MRHead.gif"/>
+    <p>Get sample data and use the volume rendering module</p>
+  </section>
+
+  <section>
+
+    <p>
+    Drag the right mouse button up and down to zoom in slice and 3D views
+    </p>
+
+    <p>
+    Slicer comes with a set of example datasets that can 
+    get you 
+    started with various modules.  These datasets are in a
+    research file format called 
+    <a href='http://teem.sf.net/nrrd'>NRRD</a>, 
+    not DICOM.
+    </p>
+
+  </section>
+
+
+</section>
+
+<section>
+
+  <h1>Summary</h1>
+    <ul>
+      <li>Slicer has many powerful interactive tools</li>
+      <li>Most everything can be scripted in python</li>
+      <li>You can completely customize the C++ code</li>
+      <li>Slicer has a BSD-style software license</li>
+      <li>More information at
+        <a href='http://slicer.org'>http://slicer.org</a>
+      </li>
+  </ul>
+
+</section>
+
+
+</div> </div>
+<script src="reveal.js"></script> <script>
+Reveal.initialize({
+  slideNumber: true,
+});
+</script> </body> </html>
