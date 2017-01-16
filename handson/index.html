@@ -17,7 +17,10 @@ ffmpeg -i /Users/pieper/Movies/SlicerInformatics-2017/MRHead.mov -f gif - | gifs
 
 -->
 
-<section>
+<!--
+Title Slide
+-->
+<section id='title'>
 
   <h1>Slicer for Informatics Research:</h1>
   <h2>Hands on examples</h2>
@@ -25,10 +28,26 @@ ffmpeg -i /Users/pieper/Movies/SlicerInformatics-2017/MRHead.mov -f gif - | gifs
   <h3><em>Steve Pieper, PhD</em></h3>
   <a href='http://isomics.com'>Isomics, Inc.</a>
 
+  <p><strong>Note:</strong></p>
+  <p>Use the arrow keys to navigate these examples.</p>
+
+</section>
+
+<section id='Contents'>
+
+  <h1>Contents</h1>
+    <ul>
+      <li><a href='#/Prerequisites'>Prerequisites</a> </li>
+      <li><a href='#/SampleData'>Exploring Sample Data</a> </li>
+  </ul>
+
 </section>
 
 
-<section>
+<!--
+Prereqs
+-->
+<section id='Prerequisites'>
 
   <h1>Prerequisites</h1>
     <ul>
@@ -45,36 +64,86 @@ ffmpeg -i /Users/pieper/Movies/SlicerInformatics-2017/MRHead.mov -f gif - | gifs
   <h3> <em>Slicer is not an FDA-approved medical devices and is intended for research only.</em></h3>
 </em></h3>
 
+<p>See <a href='https://www.slicer.org/wiki/Documentation/4.6/SlicerApplication/Installation'>the installation documentation</a> for more information.</p>
+
 </section>
 
 
-<section>
+<!--
+Simple viewing and navigation
+-->
+<section id='SampleData'>
 
   <section>
     Rendering Sample Data
     <img data-src="./gifs/MRHead.gif"/>
-    <p>Get sample data and use the volume rendering module</p>
+    <p>Task: get sample data, explore slices, and use the volume rendering module</p>
   </section>
 
   <section>
 
-    <p>
-    Drag the right mouse button up and down to zoom in slice and 3D views
-    </p>
-
-    <p>
+    <ul>
+      <li>
+      Drag the right mouse button up and down to zoom in slice and 3D views
+      </li>
+      <li>
     Slicer comes with a set of example datasets that can 
     get you 
     started with various modules.  These datasets are in a
     research file format called 
     <a href='http://teem.sf.net/nrrd'>NRRD</a>, 
-    not DICOM.
+    not DICOM.  It is widely used in the Slicer community to 
+    store volumes and label maps.
+      </li>
+      <li>
+More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/SlicerApplication/MainApplicationGUI'>the GUI documentation</a>.
+      </li>
+  </ul>
+
+  </section>
+
+</section>
+
+<!--
+Using the Editor to segment a structure
+-->
+
+<!--
+Generating label statistics table and plot
+-->
+
+
+<!--
+Loading DICOM Data
+-->
+<section>
+
+  <section>
+    Loading DICOM Data
+    <img data-src="./gifs/dicom.gif"/>
+    <p>Import DICOM data, review context, look at metadata, load</p>
+  </section>
+
+  <section>
+
+    <p>
+    Slicer includes an internal database to organize dicom files
     </p>
 
   </section>
 
-
 </section>
+
+
+<!--
+Looking at the extension manager
+-->
+
+<!--
+Working with the Python console
+-->
+
+
 
 <section>
 
