@@ -222,7 +222,13 @@ Working with the Python console
 
     <ul>
       <li>
+        Image data can be manipulated as numpy arrays, and so can the points of a surface model and many other data objects.
+      </li>
+      <li>
         Pretty much the full APIs of Slicer, Qt, VTK, and SimpleITK, are available through python.
+      </li>
+      <li>
+        Many custom extensions to Slicer can be implemented in pure python, no compiler needed!
       </li>
       <li>
 More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/Developers/Python_scripting'>the python scripting section of the Slicer developer documentation.</a>.
@@ -239,7 +245,7 @@ Looking at the extension manager
 <section id="extensions">
 
   <section>
-    Using Python
+    Slicer Extensions
     <img data-src="./gifs/extensions.gif"/>
     <p>Task: Look at some of the things in the Extension Catalog</p>
   </section>
@@ -251,8 +257,18 @@ Looking at the extension manager
         It's like an App Store, but they are all free!
       </li>
       <li>
+        The Slicer project maintains a set of "factory machines" that checkout and build all the latest source code for extensions every night.  This way extension developers can create their code on development machines, and rely on the factory to create release mode binaries for all Slicer-supported platforms that are easy to access and install by end users.
+      </li>
+      <li>
 More details at <a href='https://www.slicer.org/wiki/Documentation/4.6/SlicerApplication/ExtensionsManager'>the Extensions Manager documentation.</a>.
       </li>
+      <li>
+        Another useful tool is the <a href="https://www.slicer.org/wiki/Documentation/Labs/CustomSlicerGenerator">Custom Slicer Generator</a> that allows developers to create their own applications that bundle various extensions and remove any unwanted modules.
+      </li>
+      <li>
+        Slicer supports the concept of <a href="https://www.slicer.org/wiki/Documentation/Nightly/Developers/Slicelets">Slicelets</a> so that custom applications can build on the Slicer framework while looking nothing like Slicer the application.
+      </li>
+
   </ul>
 
   </section>
